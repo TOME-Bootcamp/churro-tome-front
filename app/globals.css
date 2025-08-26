@@ -1,10 +1,10 @@
-@import '../../node_modules/.pnpm/tailwindcss@4.1.12/node_modules/tailwindcss/dist/lib.d.mts';
+@import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
 
 @source './**/*.{js,ts,jsx,tsx}';
-@source '../../components/**/*.{js,ts,jsx,tsx}';
-@source '../../lib/**/*.{js,ts,jsx,tsx}';
+@source '../components/**/*.{js,ts,jsx,tsx}';
+@source '../lib/**/*.{js,ts,jsx,tsx}';
 
 /* 1) Design System (DS) base: definir tokens en :root (prefijo --ds-*) */
 :root {

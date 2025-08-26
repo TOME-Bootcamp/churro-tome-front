@@ -1,5 +1,5 @@
-import { getBookById } from '@/src/services/FetchJson';
-import BookDetailCard from '@/src/app/books/component/BookDetailCard';
+import { getBookById } from '@/lib/api/FetchJson';
+import BookDetailCard from '@/components/books/BookDetailCard';
 
 type DetailsProps = { params: { id: string } };
 

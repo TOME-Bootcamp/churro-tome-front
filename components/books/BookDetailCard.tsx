@@ -1,4 +1,4 @@
-import type BookType from '@/src/types/BookType';
+import type BookType from '@/lib/types/BookType';
 import { CardAction } from '@/components/ui/card';
 import Image from 'next/image';
 
