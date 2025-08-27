@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import React, { useEffect, useState } from 'react';
 import GridByTittle from '@/components/books/GridByTittle';
@@ -22,12 +23,13 @@ export default function Search({ search, size, width }: SearchProps) {
   return (
     <div>
       <div className="flex" style={{ height: `${height}px`, width: `${width}px` }}>
+        <Image src="/Search.png" alt="search" width={38} height={38} className="absolute" />
         <Input
           value={word}
           type="text"
           placeholder={`Search by ${search}`}
           onChange={(e) => setWord(e.target.value)}
-          className="--ds-neutral-100 --ds-neutral-400 rounded-[12px] border-[3px] pl-12 placeholder:text-lg placeholder:font-medium"
+          className="--ds-neutral-100 --ds-neutral-400 relative rounded-[12px] border-[3px] pl-12 placeholder:text-lg placeholder:font-medium"
         />
       </div>
       <div className="flex justify-center">

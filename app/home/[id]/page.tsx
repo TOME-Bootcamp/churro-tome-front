@@ -8,6 +8,7 @@ export default async function Details({ params }: DetailsProps) {
   const book = await getBookById(Number(param.id));
   return (
     <div>
+      x
       <BookDetailCard book={book} />
     </div>
   );

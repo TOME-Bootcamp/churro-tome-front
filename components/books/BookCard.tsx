@@ -12,7 +12,7 @@ export default function BookCard({ book, size }: BookProps) {
   return (
     <div>
       <CardAction>
-        <Link href={`/books/${book.id}`}>
+        <Link href={`/home/${book.id}`}>
           <Image
             src={book.url}
             alt={book.title}
